@@ -10,7 +10,7 @@ class Engine:
         return 'vroom vroom!'
     
     def stop(self):
-        return 'silence'
+        return 'engine stopped'
 
 class Wheel:
     def __init__(self, size, tyre_type):
@@ -46,13 +46,13 @@ class Body:
         self.is_articulated = is_articulated
         
     def open_roof(self):
-        if self.is_soft_top = True:
-            return 'opening roof'
+        if self.is_soft_top == True:
+            return 'whirr..... fold.... clunk'
         else:
             return 'cannot open roof'
             
     def close_roof(self):
-        if self.is_soft_top = True:
-            return 'closing roof'
+        if self.is_soft_top == True:
+            return 'unfold .... whirr... clunk'
         else:
             return 'no roof to close'
