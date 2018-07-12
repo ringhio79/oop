@@ -2,10 +2,26 @@ class Auto:
     pass
     
 class Engine:
-    pass
+    def __init__(self, engine_type, capacity=0):
+        self.engine_type = engine_type.lower()
+        self.capacity = capacity
+        
+    def start(self):
+        return 'vroom vroom!'
+    
+    def stop(self):
+        return 'silence'
 
 class Wheel:
-    pass
+    def __init__(self, size, tyre_type):
+        self.size = size
+        self.tyre_type = tyre_type
+        
+    def rotate(self):
+        return 'Turning!'
+        
+    def stop(self):
+        return 'Braking!'
 
 class Door:
     def __init__(self, operation_type):
@@ -24,4 +40,19 @@ class Door:
             return 'Creak Clunk!!'
 
 class Body:
-    def __init__(self, composition, is_soft_top=False, is_articulated=False)
+    def __init__(self, composition, is_soft_top=False, is_articulated=False):
+        self.composition = composition
+        self.is_soft_top = is_soft_top
+        self.is_articulated = is_articulated
+        
+    def open_roof(self):
+        if self.is_soft_top = True:
+            return 'opening roof'
+        else:
+            return 'cannot open roof'
+            
+    def close_roof(self):
+        if self.is_soft_top = True:
+            return 'closing roof'
+        else:
+            return 'no roof to close'
